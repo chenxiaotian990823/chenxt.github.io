@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css预编语言的理解和区别 | 小陈同学</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.d98e6f98.css" as="style"><link rel="preload" href="/assets/js/app.3a2a02db.js" as="script"><link rel="preload" href="/assets/js/2.06f25813.js" as="script"><link rel="preload" href="/assets/js/12.4288f496.js" as="script"><link rel="prefetch" href="/assets/js/10.87e5c6d3.js"><link rel="prefetch" href="/assets/js/11.e0997475.js"><link rel="prefetch" href="/assets/js/13.29adca7f.js"><link rel="prefetch" href="/assets/js/14.8e202fe0.js"><link rel="prefetch" href="/assets/js/15.63c28f17.js"><link rel="prefetch" href="/assets/js/16.8cc3ef7c.js"><link rel="prefetch" href="/assets/js/17.742c270e.js"><link rel="prefetch" href="/assets/js/18.80c20e04.js"><link rel="prefetch" href="/assets/js/19.2fa5c410.js"><link rel="prefetch" href="/assets/js/20.b3dacda9.js"><link rel="prefetch" href="/assets/js/21.dec87ab5.js"><link rel="prefetch" href="/assets/js/22.e7b71d6c.js"><link rel="prefetch" href="/assets/js/23.a8c07bb0.js"><link rel="prefetch" href="/assets/js/24.4195fc79.js"><link rel="prefetch" href="/assets/js/25.de66e141.js"><link rel="prefetch" href="/assets/js/26.e9ea071d.js"><link rel="prefetch" href="/assets/js/27.be8a8a41.js"><link rel="prefetch" href="/assets/js/28.c7b3c7aa.js"><link rel="prefetch" href="/assets/js/29.0657daa2.js"><link rel="prefetch" href="/assets/js/3.3bbcb358.js"><link rel="prefetch" href="/assets/js/30.86acff00.js"><link rel="prefetch" href="/assets/js/31.e0a761f1.js"><link rel="prefetch" href="/assets/js/32.d210cdc6.js"><link rel="prefetch" href="/assets/js/33.b56a10b0.js"><link rel="prefetch" href="/assets/js/34.159bb193.js"><link rel="prefetch" href="/assets/js/35.92d14737.js"><link rel="prefetch" href="/assets/js/36.13082c06.js"><link rel="prefetch" href="/assets/js/37.b6ec2c1a.js"><link rel="prefetch" href="/assets/js/38.fe536695.js"><link rel="prefetch" href="/assets/js/39.d3b0c7c3.js"><link rel="prefetch" href="/assets/js/4.a4d0f556.js"><link rel="prefetch" href="/assets/js/40.c7df83d4.js"><link rel="prefetch" href="/assets/js/41.136f35bd.js"><link rel="prefetch" href="/assets/js/42.33cdcbad.js"><link rel="prefetch" href="/assets/js/5.a7c32ad1.js"><link rel="prefetch" href="/assets/js/6.6b2b27aa.js"><link rel="prefetch" href="/assets/js/7.8b2a4078.js"><link rel="prefetch" href="/assets/js/8.1f1ef72f.js"><link rel="prefetch" href="/assets/js/9.902005d8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d98e6f98.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/headback.jpg" alt="小陈同学" class="logo"> <span class="site-name can-hide">小陈同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blogs/essay/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/javaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/css/" class="nav-link router-link-active">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/es6/" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/java/" class="nav-link">
+  Java
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blogs/essay/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/javaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/css/" class="nav-link router-link-active">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/es6/" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/java/" class="nav-link">
+  Java
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Css</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/css/preProgrammedLanguage.html" aria-current="page" class="active sidebar-link">Css预编语言的理解和区别</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/css/preProgrammedLanguage.html#是什么" class="sidebar-link">是什么</a></li><li class="sidebar-sub-header"><a href="/blogs/css/preProgrammedLanguage.html#有哪些" class="sidebar-link">有哪些</a></li><li class="sidebar-sub-header"><a href="/blogs/css/preProgrammedLanguage.html#区别" class="sidebar-link">区别</a></li></ul></li><li><a href="/blogs/css/textOverflow.html" class="sidebar-link">单行、多行文本溢出的省略样式</a></li><li><a href="/blogs/css/justifyDifWordCounts.html" class="sidebar-link">短标题的两端对齐</a></li><li><a href="/blogs/css/flex.html" class="sidebar-link">Flex布局及所想延申</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css预编语言的理解和区别"><a href="#css预编语言的理解和区别" class="header-anchor">#</a> css预编语言的理解和区别</h1> <h2 id="是什么"><a href="#是什么" class="header-anchor">#</a> 是什么</h2> <p>Css 作为一门标记性语言，语法相对简单，对使用者的要求较低，但同时也带来一些问题</p> <p>需要书写大量看似没有逻辑的代码，不方便维护及扩展，不利于复用，尤其对于非前端开发工程师来讲，往往会因为缺少 Css 编写经验而很难写出组织良好且易于维护的 Css 代码</p> <p>Css预处理器便是针对上述问题的解决方案</p> <p><font color="#FF8C00" size="4">预处理语言</font></p> <p>扩充了 Css 语言，增加了诸如变量、混合（mixin）、函数等功能，让 Css 更易维护、方便</p> <p>本质上，预处理是Css的超集</p> <p>包含一套自定义的语法及一个解析器，根据这些语法定义自己的样式规则，这些规则最终会通过解析器，编译生成对应的 Css 文件</p> <h2 id="有哪些"><a href="#有哪些" class="header-anchor">#</a> 有哪些</h2> <div class="custom-block tip"><p class="custom-block-title">Css预编译语言在前端里面有三大优秀的预编处理器，分别是：</p> <ul><li>sass</li> <li>less</li> <li>stylus</li></ul></div> <p><font color="#FF8C00" size="5">sass</font><br>
+2007 年诞生，最早也是最成熟的 Css预处理器，拥有 Ruby 社区的支持和 Compass 这一最强大的 Css框架，目前受 LESS 影响，已经进化到了全面兼容 Css 的 Scss</p> <p>文件后缀名为.sass与scss，可以严格按照 sass 的缩进方式省去大括号和分号</p> <p><font color="#FF8C00" size="5">less</font><br>
+2009年出现，受SASS的影响较大，但又使用 Css 的语法，让大部分开发者和设计师更容易上手，在 Ruby社区之外支持者远超过 SASS</p> <p>其缺点是比起 SASS来，可编程功能不够，不过优点是简单和兼容 Css，反过来也影响了 SASS演变到了Scss 的时代</p> <p><font color="#FF8C00" size="5">stylus</font><br>
+Stylus是一个Css的预处理框架，2010 年产生，来自 Node.js社区，主要用来给 Node 项目进行 Css 预处理支持</p> <p>所以Stylus 是一种新型语言，可以创建健壮的、动态的、富有表现力的Css。比较年轻，其本质上做的事情与SASS/LESS等类似</p> <h2 id="区别"><a href="#区别" class="header-anchor">#</a> 区别</h2> <div class="custom-block tip"><p class="custom-block-title">虽然各种预处理器功能强大，但使用最多的，还是以下特性：</p> <ul><li>变量（variables）</li> <li>作用域（scope）</li> <li>代码混合（ mixins）</li> <li>嵌套（nested rules）</li> <li>代码模块化（Modules）</li></ul></div> <p>因此，下面就展开这些方面的区别</p> <p><font color="#FF8C00" size="5">基本使用</font></p> <p>less和scss</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>sass</p> <div class="language-sass extra-class"><pre class="language-sass"><code><span class="token selector">.box</span>
+<span class="token property-line">    <span class="token property">display</span><span class="token punctuation">:</span> block</span>
+</code></pre></div><p>stylus</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token selector">.box</span>
+    <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> block</span>
+</code></pre></div><p><font color="#FF8C00" size="5">嵌套</font></p> <p>三者的嵌套语法都是一致的，甚至连引用父级选择器的标记 &amp; 也相同</p> <p>区别只是 Sass 和 Stylus 可以用没有大括号的方式书写</p> <p>less</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token selector">.a</span> <span class="token punctuation">{</span>
+    <span class="token selector">&amp;.b</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><font color="#FF8C00" size="5">变量</font></p> <p>变量无疑为 Css 增加了一种有效的复用方式，减少了原来在 Css 中无法避免的重复「硬编码」</p> <p>less声明的变量必须以@开头，后面紧跟变量名和变量值，而且变量名和变量值需要使用冒号:分隔开</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@red<span class="token punctuation">:</span></span> #c00<span class="token punctuation">;</span>
+
+<span class="token selector">strong</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">@red</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>sass声明的变量跟less十分的相似，只是变量名前面使用@开头</p> <div class="language-sass extra-class"><pre class="language-sass"><code><span class="token variable-line"><span class="token variable">$red</span><span class="token punctuation">:</span> #c00;</span>
+
+<span class="token selector">strong {</span>
+<span class="token property-line">    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$red</span>;</span>
+<span class="token selector">}</span>
+</code></pre></div><p>stylus声明的变量没有任何的限定，可以使用$开头，结尾的分号;可有可无，但变量与变量值之间需要使用=</p> <p>在stylus中我们不建议使用@符号开头声明变量</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">red</span> <span class="token operator">=</span> <span class="token hexcode">#c00</span></span>
+
+<span class="token selector">strong</span>
+    <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span></span>
+</code></pre></div><p><font color="#FF8C00" size="5">作用域</font></p> <p>Css 预编译器把变量赋予作用域，也就是存在生命周期。就像 js一样，它会先从局部作用域查找变量，依次向上级作用域查找</p> <p>sass中不存在全局变量</p> <div class="language-sass extra-class"><pre class="language-sass"><code><span class="token variable-line"><span class="token variable">$color</span><span class="token punctuation">:</span> black;</span>
+<span class="token selector">.scoped {</span>
+<span class="token variable-line">    <span class="token variable">$bg</span><span class="token punctuation">:</span> blue;</span>
+<span class="token variable-line">    <span class="token variable">$color</span><span class="token punctuation">:</span> white;</span>
+<span class="token property-line">    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color</span>;</span>
+<span class="token property-line">    <span class="token property">background-color</span><span class="token punctuation">:</span><span class="token property">$bg;</span></span>
+<span class="token selector">}</span>
+<span class="token selector">.unscoped {</span>
+<span class="token property-line">    <span class="token property">color</span><span class="token punctuation">:</span><span class="token property">$color;</span></span>
+<span class="token selector">}</span>
+</code></pre></div><p>编译后</p> <div class="language-sass extra-class"><pre class="language-sass"><code><span class="token selector">.scoped {</span>
+<span class="token property-line">    <span class="token property">color</span><span class="token punctuation">:</span><span class="token property">white;/*是白色*/</span></span>
+<span class="token property-line">    <span class="token property">background-color</span><span class="token punctuation">:</span><span class="token property">blue;</span></span>
+<span class="token selector">}</span>
+<span class="token selector">.unscoped {</span>
+<span class="token property-line">    <span class="token property">color</span><span class="token punctuation">:</span><span class="token property">white;/*白色（无全局变量概念）*/</span></span>
+<span class="token selector">}</span>
+</code></pre></div><p>所以，在sass中最好不要定义相同的变量名</p> <p>less与stylus的作用域跟javascript十分的相似，首先会查找局部定义的变量，如果没有找到，会像冒泡一样，一级一级往下查找，直到根为止</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@color<span class="token punctuation">:</span></span> black<span class="token punctuation">;</span>
+<span class="token selector">.scoped</span> <span class="token punctuation">{</span>
+    <span class="token variable">@bg<span class="token punctuation">:</span></span> blue<span class="token punctuation">;</span>
+    <span class="token variable">@color<span class="token punctuation">:</span></span> white<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">@color</span><span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span><span class="token variable">@bg</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.unscoped</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span><span class="token variable">@color</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译后:</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token selector">.scoped</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span>white<span class="token punctuation">;</span><span class="token comment">/*白色（调用了局部变量）*/</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span>blue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.unscoped</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span>black<span class="token punctuation">;</span><span class="token comment">/*黑色（调用了全局变量）*/</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><font color="#FF8C00" size="5">混入</font></p> <p>混入（mixin）应该说是预处理器最精髓的功能之一了，简单点来说，Mixins可以将一部分样式抽出，作为单独定义的模块，被很多选择器重复使用</p> <p>可以在Mixins中定义变量或者默认参数</p> <p>在less中，混合的用法是指将定义好的ClassA中引入另一个已经定义的Class，也能使用够传递参数，参数变量为@声明</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token selector">.alert</span> <span class="token punctuation">{</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.highlight(<span class="token variable">@color</span>: red)</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">@color</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.heads-up</span> <span class="token punctuation">{</span>
+    <span class="token mixin-usage function">.alert</span><span class="token punctuation">;</span>
+    <span class="token mixin-usage function">.highlight</span><span class="token punctuation">(</span>red<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译后</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token selector">.alert</span> <span class="token punctuation">{</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.heads-up</span> <span class="token punctuation">{</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Sass声明mixins时需要使用@mixinn，后面紧跟mixin的名，也可以设置参数，参数名为变量$声明的形式</p> <div class="language-sass extra-class"><pre class="language-sass"><code><span class="token atrule-line"><span class="token atrule">@mixin</span> large-text {</span>
+<span class="token property-line">    <span class="token property">font</span><span class="token punctuation">:</span> {</span>
+<span class="token property-line">        <span class="token property">family</span><span class="token punctuation">:</span> Arial;</span>
+<span class="token property-line">        <span class="token property">size</span><span class="token punctuation">:</span> 20px;</span>
+<span class="token property-line">        <span class="token property">weight</span><span class="token punctuation">:</span> bold;</span>
+    <span class="token selector">}</span>
+<span class="token property-line">    <span class="token property">color</span><span class="token punctuation">:</span> #ff0000;</span>
+<span class="token selector">}</span>
+
+<span class="token selector">.page-title {</span>
+<span class="token atrule-line">    <span class="token atrule">@include</span> large-text;</span>
+<span class="token property-line">    <span class="token property">padding</span><span class="token punctuation">:</span> 4px;</span>
+<span class="token property-line">    <span class="token property">margin-top</span><span class="token punctuation">:</span> 10px;</span>
+<span class="token selector">}</span>
+</code></pre></div><p>stylus中的混合和前两款Css预处理器语言的混合略有不同，他可以不使用任何符号，就是直接声明Mixins名，然后在定义参数和默认值之间用等号（=）来连接</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token func"><span class="token function">error</span><span class="token punctuation">(</span>borderWidth<span class="token operator">=</span> <span class="token number">2</span><span class="token unit">px</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">border</span><span class="token punctuation">:</span> borderWidth solid <span class="token hexcode">#F00</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#F00</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.generic-error <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+    <span class="token func"><span class="token function">error</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* 调用error mixins */</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">.login-error <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">12</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span></span>
+    <span class="token property-declaration"><span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token unit">px</span><span class="token punctuation">;</span></span>
+    <span class="token func"><span class="token function">error</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* 调用error mixins，并将参数$borderWidth的值指定为5px */</span></span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><font color="#FF8C00" size="5">代码模块化</font></p> <p>模块化就是将Css代码分成一个个模块</p> <p>scss、less、stylus三者的使用方法都如下所示</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@import</span> <span class="token string">'./common'</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">'./github-markdown'</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">'./mixin'</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">'./variables'</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blogs/css/textOverflow.html">
+        单行、多行文本溢出的省略样式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3a2a02db.js" defer></script><script src="/assets/js/2.06f25813.js" defer></script><script src="/assets/js/12.4288f496.js" defer></script>
+  </body>
+</html>

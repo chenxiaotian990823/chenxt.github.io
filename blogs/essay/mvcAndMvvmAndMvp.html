@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mvc、mvvm和mvp | 小陈同学</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.d98e6f98.css" as="style"><link rel="preload" href="/assets/js/app.3a2a02db.js" as="script"><link rel="preload" href="/assets/js/2.06f25813.js" as="script"><link rel="preload" href="/assets/js/22.e7b71d6c.js" as="script"><link rel="prefetch" href="/assets/js/10.87e5c6d3.js"><link rel="prefetch" href="/assets/js/11.e0997475.js"><link rel="prefetch" href="/assets/js/12.4288f496.js"><link rel="prefetch" href="/assets/js/13.29adca7f.js"><link rel="prefetch" href="/assets/js/14.8e202fe0.js"><link rel="prefetch" href="/assets/js/15.63c28f17.js"><link rel="prefetch" href="/assets/js/16.8cc3ef7c.js"><link rel="prefetch" href="/assets/js/17.742c270e.js"><link rel="prefetch" href="/assets/js/18.80c20e04.js"><link rel="prefetch" href="/assets/js/19.2fa5c410.js"><link rel="prefetch" href="/assets/js/20.b3dacda9.js"><link rel="prefetch" href="/assets/js/21.dec87ab5.js"><link rel="prefetch" href="/assets/js/23.a8c07bb0.js"><link rel="prefetch" href="/assets/js/24.4195fc79.js"><link rel="prefetch" href="/assets/js/25.de66e141.js"><link rel="prefetch" href="/assets/js/26.e9ea071d.js"><link rel="prefetch" href="/assets/js/27.be8a8a41.js"><link rel="prefetch" href="/assets/js/28.c7b3c7aa.js"><link rel="prefetch" href="/assets/js/29.0657daa2.js"><link rel="prefetch" href="/assets/js/3.3bbcb358.js"><link rel="prefetch" href="/assets/js/30.86acff00.js"><link rel="prefetch" href="/assets/js/31.e0a761f1.js"><link rel="prefetch" href="/assets/js/32.d210cdc6.js"><link rel="prefetch" href="/assets/js/33.b56a10b0.js"><link rel="prefetch" href="/assets/js/34.159bb193.js"><link rel="prefetch" href="/assets/js/35.92d14737.js"><link rel="prefetch" href="/assets/js/36.13082c06.js"><link rel="prefetch" href="/assets/js/37.b6ec2c1a.js"><link rel="prefetch" href="/assets/js/38.fe536695.js"><link rel="prefetch" href="/assets/js/39.d3b0c7c3.js"><link rel="prefetch" href="/assets/js/4.a4d0f556.js"><link rel="prefetch" href="/assets/js/40.c7df83d4.js"><link rel="prefetch" href="/assets/js/41.136f35bd.js"><link rel="prefetch" href="/assets/js/42.33cdcbad.js"><link rel="prefetch" href="/assets/js/5.a7c32ad1.js"><link rel="prefetch" href="/assets/js/6.6b2b27aa.js"><link rel="prefetch" href="/assets/js/7.8b2a4078.js"><link rel="prefetch" href="/assets/js/8.1f1ef72f.js"><link rel="prefetch" href="/assets/js/9.902005d8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d98e6f98.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/headback.jpg" alt="小陈同学" class="logo"> <span class="site-name can-hide">小陈同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blogs/essay/" class="nav-link router-link-active">
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/javaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/es6/" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/java/" class="nav-link">
+  Java
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blogs/essay/" class="nav-link router-link-active">
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/javaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/es6/" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/java/" class="nav-link">
+  Java
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>随笔</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/essay/computed.html" class="sidebar-link">计算属性</a></li><li><a href="/blogs/essay/currying.html" class="sidebar-link">柯里化函数</a></li><li><a href="/blogs/essay/difOfAndroidAndIosTime.html" class="sidebar-link">IOS和Android的获取时间不同</a></li><li><a href="/blogs/essay/promise.html" class="sidebar-link">promise的基本用法</a></li><li><a href="/blogs/essay/variable.html" class="sidebar-link">var、let、const变量</a></li><li><a href="/blogs/essay/minimumBalanceMethod.html" class="sidebar-link">最小余额法</a></li><li><a href="/blogs/essay/mvcAndMvvmAndMvp.html" aria-current="page" class="active sidebar-link">mvc、mvvm和mvp</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/essay/mvcAndMvvmAndMvp.html#mvc" class="sidebar-link">mvc</a></li><li class="sidebar-sub-header"><a href="/blogs/essay/mvcAndMvvmAndMvp.html#mvp" class="sidebar-link">mvp</a></li><li class="sidebar-sub-header"><a href="/blogs/essay/mvcAndMvvmAndMvp.html#mvvm" class="sidebar-link">mvvm</a></li></ul></li><li><a href="/blogs/essay/timeConversion.html" class="sidebar-link">时间转换</a></li><li><a href="/blogs/essay/dynamicBindingOfClass.html" class="sidebar-link">class的动态绑定</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mvc、mvvm和mvp"><a href="#mvc、mvvm和mvp" class="header-anchor">#</a> mvc、mvvm和mvp</h1> <h2 id="mvc"><a href="#mvc" class="header-anchor">#</a> mvc</h2> <p>MVC模式的意思是，软件可以分成三个部分。</p> <p><img src="/images/mvc.png" alt="avatar"></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <ul><li>视图（View）：用户界面。</li> <li>控制器（Controller）：业务逻辑</li> <li>模型（Model）：数据保存</li></ul></div> <p>各部分之间的通信方式如下:</p> <p><img src="/images/mvcCommunicate.png" alt="avatar"></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>通信步骤</p> <p>1、View 传送指令到 Controller<br>
+2、Controller 完成业务逻辑后，要求 Model 改变状态<br>
+3、Model 将新的数据发送到 View，用户得到反馈</p> <p>注:所有通信都是单向的。</p></div> <p><font color="#FF8C00" size="5">mvc互动模式</font></p> <p>接受用户指令时，MVC 可以分成两种方式。一种是通过 View 接受指令，传递给 Controller。</p> <p><img src="/images/mvcInteractive1.png" alt="avatar"></p> <p>另一种是直接通过controller接受指令。</p> <p><img src="/images/mvcInteractive2.png" alt="avatar"></p> <h2 id="mvp"><a href="#mvp" class="header-anchor">#</a> mvp</h2> <p>MVP 模式将 Controller 改名为 Presenter，同时改变了通信方向。</p> <p><img src="/images/mvp.png" alt="avatar"></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>1、各部分之间的通信，都是双向的。<br>
+2、View 与 Model 不发生联系，都通过 Presenter 传递。<br>
+3、View 非常薄，不部署任何业务逻辑，称为&quot;被动视图&quot;（Passive View），即没有任何主动性，而 Presenter非常厚，所有逻辑都部署在那里。</p></div> <h2 id="mvvm"><a href="#mvvm" class="header-anchor">#</a> mvvm</h2> <p>MVVM 模式将 Presenter 改名为 ViewModel，基本上与 MVP 模式完全一致。</p> <p><img src="/images/mvvm.png" alt="avatar"></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>唯一的区别是，它采用双向绑定（data-binding）：View的变动，自动反映在 ViewModel，反之亦然。Angular 和 Ember 都采用这种模式。</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blogs/essay/minimumBalanceMethod.html" class="prev">
+        最小余额法
+      </a></span> <span class="next"><a href="/blogs/essay/timeConversion.html">
+        时间转换
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3a2a02db.js" defer></script><script src="/assets/js/2.06f25813.js" defer></script><script src="/assets/js/22.e7b71d6c.js" defer></script>
+  </body>
+</html>
